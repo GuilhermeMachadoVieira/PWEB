@@ -1,0 +1,123 @@
+
+body {
+    font-family: 'Cheltenham', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; 
+}
+
+header {
+    background-color: #ca0014;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    text-align: center; 
+}
+
+header h1 {
+    margin: 0;
+    display: inline-block;
+}
+
+header .tab {
+    position: relative;
+}
+
+header .toggle-nav {
+    background-color: #ca0014;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+header .close-tab {
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+header .close-tab:hover {
+    color: #ca0014; 
+}
+
+header p {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 5px;
+}
+
+.side-nav {
+    background-color: #5a0009;
+    color: #fff;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    transition: left 0.3s ease;
+}
+
+.show-nav {
+    left: 0;
+}
+
+.side-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-nav ul li {
+    padding: 10px;
+}
+
+.side-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section.main-content {
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+.read-more {
+    display: block;
+    color: #fff;
+    background-color: #ca0014; 
+    padding: 8px 12px;
+    text-decoration: none;
+    width: fit-content;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #ca0014; 
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
