@@ -1,0 +1,71 @@
+div {
+    text-align: center;
+    margin: 10%;
+    padding: 10%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 420px) {
+    #bloco {
+        background-color: hsl(245, 100%, 59%);
+        color: #000000;
+    }
+
+    #bloco #texto::before {
+        content: "Tamanho 420px";
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+    #bloco {
+        background-color: blue;
+        color: black;
+    }
+
+    #bloco #texto::before {
+        content: "Tamanho 768px";
+    }
+}
+
+@media screen and (min-width: 789px) and (max-width: 1024px) {
+    #bloco {
+        background-color: orange;
+        color: black;
+    }
+
+    #bloco #texto::before {
+        content: "Tamanho 1024px";
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+    #bloco {
+        background-color: purple;
+        color: black;
+    }
+
+    #bloco #texto::before {
+        content: "Tamanho 1366px";
+    }
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1920px) {
+    #bloco {
+        background-color: yellow;
+        color: black;
+    }
+
+    #bloco #texto::before {
+        content: "Tamanho 1920px";
+    }
+}
+
+@media screen and (min-width: 1921px) and (max-width: 2200px) {
+    #bloco {
+        background-color: green;
+        color: black;
+    }
+
+    #bloco #texto::before {
+        content: "Tamanho 2200px";
+    }
+}
