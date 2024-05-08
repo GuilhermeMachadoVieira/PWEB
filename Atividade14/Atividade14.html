@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformação de Texto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .label-text {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .input-text {
+            width: calc(100% - 22px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .checkbox-label input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .checkbox-label span {
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Transformação de Texto</h2>
+        <label for="inputText" class="label-text">Texto:</label>
+        <input type="text" id="inputText" class="input-text">
+
+        <label class="checkbox-label">
+            <input type="checkbox" id="upperCaseCheckbox"> Transformar em maiúsculas
+        </label>
+
+        <label class="checkbox-label">
+            <input type="checkbox" id="lowerCaseCheckbox"> Transformar em minúsculas
+        </label>
+    </div>
+
+    <script>
+        const inputText = document.getElementById('inputText');
+        const upperCaseCheckbox = document.getElementById('upperCaseCheckbox');
+        const lowerCaseCheckbox = document.getElementById('lowerCaseCheckbox');
+
+        upperCaseCheckbox.addEventListener('change', () => {
+            if (upperCaseCheckbox.checked) {
+                inputText.value = inputText.value.toUpperCase();
+                lowerCaseCheckbox.checked = false; // Desmarca o outro checkbox
+            }
+        });
+
+        lowerCaseCheckbox.addEventListener('change', () => {
+            if (lowerCaseCheckbox.checked) {
+                inputText.value = inputText.value.toLowerCase();
+                upperCaseCheckbox.checked = false; // Desmarca o outro checkbox
+            }
+        });
+    </script>
+</body>
+</html>
