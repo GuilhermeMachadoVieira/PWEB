@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atividade 13</title>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 24px;
+}
+
+.container img {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.3s;
+}
+
+.container img:hover {
+  transform: scaleY(1.1);
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Janela Fechada</h1>
+  <img id="janela" src="janela_fechada.jpg" alt="Janela Fechada">
+</div>
+<script>
+const janela = document.getElementById('janela');
+
+janela.addEventListener('click', () => {
+  janela.src = 'janela_quebrada.jpg';
+  document.querySelector('h1').textContent = 'Janela Quebrada';
+});
+
+janela.addEventListener('mouseover', () => {
+  janela.src = 'janela_aberta.jpg';
+  document.querySelector('h1').textContent = 'Janela Aberta';
+});
+
+janela.addEventListener('mouseout', () => {
+  janela.src = 'janela_fechada.jpg';
+  document.querySelector('h1').textContent = 'Janela Fechada';
+});
+</script>
+</body>
+</html>
