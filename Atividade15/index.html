@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Atividade 15</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Formulário Principal</h1>
+    <form name="formpesquisa" onsubmit="return validar()">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome">
+        <br>
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="comentario">Comentário:</label><br>
+        <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br><br>
+        
+        <h3><strong>Pesquisa:</strong></h3><br>
+        <label>Primeira vez nessa página?</label><br>
+        <input type="radio" id="pesquisaSim" name="pesquisa" value="sim">
+        <label for="pesquisaSim">Sim</label>
+        <input type="radio" id="pesquisaNao" name="pesquisa" value="nao">
+        <label for="pesquisaNao">Não</label><br><br>
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+   
+</body>
+</html>
